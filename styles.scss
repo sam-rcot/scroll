@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+#main {
+    width: 75vw;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    position: relative;
+    margin: 0 auto;
+    overflow: scroll;
+    display: grid;
+    //padding-top: 10%;
+    // &::-webkit-scrollbar {
+    //     width: 20px;
+    // }
+    // &::-webkit-scrollbar-track {
+    //     box-shadow: inset 0 0 1px grey;
+    //     border-radius: 00px;
+    //   }
+    // &::-webkit-scrollbar-thumb {
+    //     background: slategray;
+    //     border-radius: 0px;
+    //   }
+}
+
+
+#scrollCounter {
+    position: fixed;
+    top: 0;
+}
+
+/* CSS file or <style> tag */
+.filler {
+    text-align: center;
+    font-size: 10rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: sticky;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    top: 0%;
+    pointer-events: none;
+    background-color: hsl(var(--dynamic-hue), 70%, 80%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.verticalSpace {
+    // background-color: aquamarine;
+    grid-column: 1;
+    grid-row: 1;
+    position: sticky;
+    top: 0%;
+}
+/* Dynamic background color using CSS variables */
+:root {
+    --dynamic-hue: 0;
+    /* Default hue value */
+}
+
+.filler {
+    background-color: hsl(var(--dynamic-hue), 70%, 80%);
+}

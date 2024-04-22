@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Distribution directory
+dist/
+
+# Ignore specific file that might contain sensitive or unsharable code
+apiQuery.ts
+
+# System files
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+yarn.lock
+
+# Compiled JavaScript from TypeScript
+*.js
+*.js.map
+
+# Ignore TypeScript compiler binary
+tsc
+
+# Other files
+*.log
+npm-debug.log
+yarn-error.log
